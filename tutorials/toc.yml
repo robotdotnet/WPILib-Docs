@@ -1,2 +1,16 @@
 - name: Introduction
   href: intro.md
+- name: Windows installation
+  href: windowsinstall.md
+- name: Installing the runtime onto the roboRIO
+  href: provisioning.md
+- name: Creating your first WPILib project
+  href: firstcreate.md
+- name: Creating a project with the Attributed Robot Model
+  href: createattributed.md
+- name: Creating a project using the LabVIEW style base class
+  href: createlv.md
+- name: Writing and Running your first WPILib program
+  href: writingandrunning.md
+- name: Updating WPILib
+  href: updatewpilib.md

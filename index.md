@@ -1,4 +1,3 @@
-# This is the **HOMEPAGE**.
-Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to write markdown files.
-## Quick Start Notes:
-1. Add images to the *images* folder if the file is referencing an image.
+# Welcome to RobotDotNet
+You have found the homepage for RobotDotNet, a port of the FRC WPILib libraries to .NET. 
+Here you will find all of the documentation and resources.
