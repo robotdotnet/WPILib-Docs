@@ -1,0 +1,5 @@
+apiRules:
+- exclude:
+  uidRegex: ^OpenCvSharp\.PInvoke\.NativeLibraryUtilities
+- exclude:
+  uidRegex: ^CTRE\.NativeLibraryUtilities

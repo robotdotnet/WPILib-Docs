@@ -56,10 +56,22 @@
             "**/bin/**",
             "_site/**"
           ]
+        },
+        {
+          "cwd": "../WPILib-CTRE/src/FRC.WPILib.CTRE/",
+          "files": [
+            "project.json"
+          ],
+          "exclude": [
+            "**/obj/**",
+            "**/bin/**",
+            "_site/**"
+          ]
         }
       ], 
       
-      "dest": "api"
+      "dest": "api",
+      "filter": "filter.yml"
     }
   ],
   "build": {
