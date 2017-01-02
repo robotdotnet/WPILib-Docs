@@ -14,3 +14,5 @@
   href: writingandrunning.md
 - name: Updating WPILib
   href: updatewpilib.md
+- name: Working with Cameras and OpenCV
+  href: opencv.md
