@@ -1,5 +1,10 @@
 apiRules:
-- exclude:
-  uidRegex: ^OpenCvSharp\.PInvoke\.NativeLibraryUtilities
-- exclude:
-  uidRegex: ^CTRE\.NativeLibraryUtilities
+  - exclude:
+      uidRegex: ^OpenCvSharp\.NativeMethods
+      type: Type
+  - exclude:
+      uidRegex: ^OpenCvSharp\.Win32Api
+      type: Type
+  - exclude:
+      uidRegex: ^OpenCvSharp\.Util\.PInvokeHelper
+      type: Type
