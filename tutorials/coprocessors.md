@@ -11,9 +11,9 @@ and either choice is highly recommended. Note that when choosing a Pi, we heavil
 and Pi Zero are not supported platforms because of their old architecture. When using a Pi, we recommend adding both a heatsink and a fan to the device, in order to keep 
 your framerates high and your temperatures low. 
 
-For cameras, there are a lot more options. We recommend either a Microsoft or a Logitech camera. A Microsoft Lifecam has been offered on FIRST Choice in the past, and is
-a great option. If you are running on a Raspberry Pi, it is actually possible to get that working with CameraServer as well. This has the advantages of being off the USB
-bus, so you don't have to worry about running out of USB bandwidth. This requires running the following command at boot to enable it. 
+For cameras, there are a lot more options. We recommend either a Microsoft or a Logitech camera. A Microsoft Lifecam has been offered on FIRST Choice in the past, 
+and is a great option. If you are running on a Raspberry Pi, it is actually possible to get the Raspberry Pi Camera working with CameraServer as well. 
+This has the advantages of being off the USB bus, so you don't have to worry about running out of USB bandwidth. This requires running the following command at boot to enable it. 
 
     sudo modprobe bcm2835-v4l2
 
