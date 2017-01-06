@@ -16,3 +16,5 @@
   href: updatewpilib.md
 - name: Working with Cameras and OpenCV
   href: opencv.md
+- name: OpenCV and Arm Coprocessors
+  href: coprocessors.md
