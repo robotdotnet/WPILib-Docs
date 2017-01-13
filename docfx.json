@@ -3,7 +3,7 @@
     {
       "src": [
         {
-          "cwd": "../CameraServer/src/",
+          "cwd": "repos/cameraserver/src/",
           "files": [
             "FRC.CameraServer/project.json"
           ],
@@ -14,7 +14,7 @@
           ]
         },
         {
-          "cwd": "../NetworkTables/src/",
+          "cwd": "repos/networktables/src/",
           "files": [
             "FRC.NetworkTables/project.json"
           ],
@@ -25,7 +25,7 @@
           ]
         },
         {
-          "cwd": "../FRC-OpenCvSharp/src/",
+          "cwd": "repos/frc-opencvsharp/src/",
           "files": [
             "FRC.OpenCvSharp/project.json"
           ],
@@ -36,7 +36,7 @@
           ]
         },
         {
-          "cwd": "../WPILib/WPILib/",
+          "cwd": "repos/wpilib/WPILib/",
           "files": [
             "WPILib.csproj"
           ],
@@ -47,7 +47,7 @@
           ]
         },
         {
-          "cwd": "../WPILib/WPILib.Extras/",
+          "cwd": "repos/wpilib/WPILib.Extras/",
           "files": [
             "WPILib.Extras.csproj"
           ],
@@ -58,9 +58,9 @@
           ]
         },
         {
-          "cwd": "../WPILib-CTRE/src/FRC.WPILib.CTRE/",
+          "cwd": "repos/wpilib-ctre/src/",
           "files": [
-            "project.json"
+            "FRC.WPILib.CTRE/project.json"
           ],
           "exclude": [
             "**/obj/**",
