@@ -16,6 +16,10 @@ git clone https://github.com/robotdotnet/wpilib "$localFolder\repos\wpilib" --de
 git clone https://github.com/robotdotnet/networktables "$localFolder\repos\networktables" --depth=1
 git clone https://github.com/robotdotnet/wpilib-ctre "$localFolder\repos\wpilib-ctre" --depth=1
 
+dotnet restore
+
+git checkout master
+
 docfx
 
 Remove-Item "$localFolder\site.zip"
@@ -26,5 +30,5 @@ $compressionLevel = [System.IO.Compression.CompressionLevel]::Optimal
     "$localFolder\site.zip", $compressionLevel, $false)
 
 if ($env:APPVEYOR) {
-  Get-ChildItem .\artifacts\*.nupkg | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
+  Get-ChildItem "$localFolder\site.zip" | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
 }
