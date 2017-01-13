@@ -1,3 +1,9 @@
+environment:
+  op_build_user: "RobotDotNetCI"
+  op_build_user_email: "robotdotnet@gmail.com"
+  access_token:
+    secure: fwCTagTAptB4QJnTt9RrLEvg3G0cEJxssYNxtYFMBKnqHqbGomBTZvvGjrHtt7l4
+
 version: '{branch}-{build}'
 pull_requests:
   do_not_increment_build_number: true
@@ -11,6 +17,10 @@ build_script:
 - ps: >-
     ./runBuild.ps1
 
-    if($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode )  }
+after_build:
+- ps: >-
+    If (($env:APPVEYOR_REPO_BRANCH -eq "master") -and (!$env:APPVEYOR_PULL_REQUEST_NUMBER)) {
 
-    
+      ./pushToWebsite.ps1
+
+    }
