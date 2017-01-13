@@ -4,8 +4,14 @@ if ($env:APPVEYOR)
   cinst docfx -y
 }
 
-git clone https://github.com/robotdotnet/frc-opencvsharp repos/frc-opencvsharp --depth=1
-git clone https://github.com/robotdotnet/cameraserver repos/cameraserver --depth=1
-git clone https://github.com/robotdotnet/wpilib repos/wpilib --depth=1
-git clone https://github.com/robotdotnet/networktables repos/networktables --depth=1
-git clone https://github.com/robotdotnet/wpilib-ctre repos/wpilib-ctre --depth=1
+if ($env:APPVEYOR) {
+    $localFolder = "$env:APPVEYOR_BUILD_FOLDER\repos"
+} else {
+    $localFolder = ".\repos"
+}
+
+git clone https://github.com/robotdotnet/frc-opencvsharp "$localFolder\frc-opencvsharp" --depth=1
+git clone https://github.com/robotdotnet/cameraserver "$localFolder\cameraserver" --depth=1
+git clone https://github.com/robotdotnet/wpilib "$localFolder\wpilib" --depth=1
+git clone https://github.com/robotdotnet/networktables "$localFolder\networktables" --depth=1
+git clone https://github.com/robotdotnet/wpilib-ctre "$localFolder\wpilib-ctre" --depth=1
