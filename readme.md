@@ -5,17 +5,5 @@ This repo hosts the source code for the RobotDotNet WPILib Documentation. The co
 
 ## Building
 
-In order to build the docs, you must have the following repos cloned, with the following folder structure
-```
-root
-|___NetworkTables
-|___WPILib-Docs
-|___CameraServer
-|___FRC-OpenCvSharp
-|___WPILib
-```
-
-You also must have docfx installed somewhere in your path
-
-Once you have this, nativate to the WPILib-Docs folder, and run `docfx --serve`. This will generate the documentation and serve
-it to your localhost.
+To build the site, run `runBuild.ps1`. This will clone all the necessary repos, and run the build. To do this, you must have both a version of the .NET core SDK installed,
+along with docfx installed somewhere in your path.
