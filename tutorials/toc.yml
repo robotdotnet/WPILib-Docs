@@ -1,5 +1,7 @@
 - name: Introduction
   href: intro.md
+- name: Using the CTRE Libraries
+  hreg: ctre.md
 - name: Windows installation
   href: windowsinstall.md
 - name: Installing the runtime onto the roboRIO
@@ -14,6 +16,8 @@
   href: writingandrunning.md
 - name: Updating WPILib
   href: updatewpilib.md
+- name: Using the CTRE Libraries
+  hreg: ctre.md
 - name: Working with Cameras and OpenCV
   href: opencv.md
 - name: OpenCV and Arm Coprocessors
