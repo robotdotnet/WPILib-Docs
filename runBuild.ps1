@@ -2,6 +2,8 @@ if ($env:APPVEYOR)
 {
   # Install docfx
   cinst docfx -y --ignore-checksums
+  
+  if($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode )  }
 }
 
 if ($env:APPVEYOR) {
