@@ -1,7 +1,7 @@
 if ($env:APPVEYOR)
 {
   # Install docfx
-  cinst docfx -y
+  cinst docfx -y --ignore-checksums
 }
 
 if ($env:APPVEYOR) {
