@@ -1,0 +1,14 @@
+- name: NetworkTables
+  items:
+  - name: Installing
+    href: nt/installing.md
+  - name: Configuring a Server
+    href: nt/configserver.md
+  - name: Configuring a Client
+    href: nt/configclient.md
+  - name: Getting SmartDashboard Data
+    href: nt/smartdashboard.md
+  - name: Getting a reference to a Table
+    href: nt/gettingtable.md
+  - name: Using an ITable
+    href: nt/usingtable.md

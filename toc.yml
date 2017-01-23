@@ -4,4 +4,6 @@
   href: tutorials/
 - name: Api Documentation
   href: api/
+- name: Examples
+  href: examples/
   homepage: api/index.md
