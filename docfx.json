@@ -3,6 +3,17 @@
     {
       "src": [
         {
+          "cwd": "repos/nativelibraryutilities/src/",
+          "files": [
+            "NativeLibraryUtilities/project.json"
+          ],
+          "exclude": [
+            "**/obj/**",
+            "**/bin/**",
+            "_site/**"
+          ]
+        },
+        {
           "cwd": "repos/cameraserver/src/",
           "files": [
             "FRC.CameraServer/project.json"

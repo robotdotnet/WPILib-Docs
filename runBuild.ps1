@@ -10,6 +10,7 @@ if ($env:APPVEYOR) {
     $localFolder = "."
 }
 
+git clone https://github.com/robotdotnet/nativelibraryutilities "$localFolder\repos\nativelibraryutilities" --depth=1
 git clone https://github.com/robotdotnet/frc-opencvsharp "$localFolder\repos\frc-opencvsharp" --depth=1
 git clone https://github.com/robotdotnet/cameraserver "$localFolder\repos\cameraserver" --depth=1
 git clone https://github.com/robotdotnet/wpilib "$localFolder\repos\wpilib" --depth=1
