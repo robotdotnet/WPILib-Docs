@@ -132,6 +132,10 @@
       "default"
     ],
     "postProcessors": [],
-    "noLangKeyword": false
+    "noLangKeyword": false,
+    "globalMetadata": {
+      "_appTitle": "RobotDotNet",
+      "_appFooter" : "Copyright © 2017 RobotDotNet"
+    }
   }
 }
