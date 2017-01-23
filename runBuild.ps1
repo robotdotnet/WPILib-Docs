@@ -28,6 +28,8 @@ git checkout master
 
 docfx
 
+if($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode )  }
+
 Remove-Item "$localFolder\site.zip"
 
 Add-Type -Assembly System.IO.Compression.FileSystem
