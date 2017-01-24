@@ -21,6 +21,31 @@ You can follow the instructions [here](http://www.richardmudhar.com/blog/2015/02
 that setting on startup.
 
 ## Installing Mono
-On these coprocessors, Mono is what we will use to run our processing. To install 
+On these coprocessors, Mono is what we will use to run our processing. To install Mono on these plaforms, follow the instructions found on 
+[the mono website](http://www.mono-project.com/docs/getting-started/install/linux/). When choosing the package to install, make sure to install
+`mono-complete` in order to make sure you have all the necessary runtime dependencies.
 
-## Setting up a build
+## Setting up a project
+A project for your coprocessor can either be set up using Visual Studio, or use can build locally on the coprocessor using Mono. We 
+recommend Visual Studio on Windows for the easiest support. See the note at the bottom of this page for information on using .NET Core.
+
+To set up a project in Visual Studio, create a new Console Application, and make sure that the target framework is set to at least 4.6. Once you
+have that, install the following packages from NuGet:
+* [FRC.CameraServer](https://www.nuget.org/packages/FRC.CameraServer/)
+* [FRC.NetworkTables](https://www.nuget.org/packages/FRC.NetworkTables/)
+* [FRC.OpenCvSharp](https://www.nuget.org/packages/FRC.OpenCvSharp/)
+* [FRC.OpenCvSharp.DesktopLibraries](https://www.nuget.org/packages/FRC.OpenCvSharp.DesktopLibraries/)
+
+This will get you all the dependencies you will need to set up a coprocessor project. 
+
+## Deploying to the Coprocessor
+Once you have your project created, you need to get the code onto the coprocessor. To do this, run a build. The output will be placed into either `bin/Release` or `bin/Debug`
+in your project folder. You need to copy all files from this directory to a folder on your coprocessor.
+
+Once you do this, from the terminal on the coprocessor, run `mono YourExecutableNameHere.exe`. This will run your vision project.
+
+## Using .NET Core
+If your choses platform has .NET Core support, all of our libraries support .NET Core Standard 1.5 or above. So if you want to compile for
+.NET Core, you can. However note that no arm devices at the time of this writing have released .NET Core support, so our instructions are
+currently only for running on the full framework. You can however use the .NET Core SDK and target .NET 4.6 in order to run on mono, 
+but we do not currently have instructions for doing this.
