@@ -3,75 +3,15 @@
     {
       "src": [
         {
-          "cwd": "repos/nativelibraryutilities/src/",
+          "cwd": "repos/",
           "files": [
-            "NativeLibraryUtilities/project.json"
-          ],
-          "exclude": [
-            "**/obj/**",
-            "**/bin/**",
-            "_site/**"
-          ]
-        },
-        {
-          "cwd": "repos/cameraserver/src/",
-          "files": [
-            "FRC.CameraServer/project.json"
-          ],
-          "exclude": [
-            "**/obj/**",
-            "**/bin/**",
-            "_site/**"
-          ]
-        },
-        {
-          "cwd": "repos/networktables/src/",
-          "files": [
-            "FRC.NetworkTables/project.json"
-          ],
-          "exclude": [
-            "**/obj/**",
-            "**/bin/**",
-            "_site/**"
-          ]
-        },
-        {
-          "cwd": "repos/frc-opencvsharp/src/",
-          "files": [
-            "FRC.OpenCvSharp/project.json"
-          ],
-          "exclude": [
-            "**/obj/**",
-            "**/bin/**",
-            "_site/**"
-          ]
-        },
-        {
-          "cwd": "repos/wpilib/WPILib/",
-          "files": [
-            "WPILib.csproj"
-          ],
-          "exclude": [
-            "**/obj/**",
-            "**/bin/**",
-            "_site/**"
-          ]
-        },
-        {
-          "cwd": "repos/wpilib/WPILib.Extras/",
-          "files": [
-            "WPILib.Extras.csproj"
-          ],
-          "exclude": [
-            "**/obj/**",
-            "**/bin/**",
-            "_site/**"
-          ]
-        },
-        {
-          "cwd": "repos/wpilib-ctre/src/",
-          "files": [
-            "FRC.WPILib.CTRE/project.json"
+            "nativelibraryutilities/src/NativeLibraryUtilities/project.json",
+            "cameraserver/src/FRC.CameraServer/project.json",
+            "networktables/src/FRC.NetworkTables/project.json",
+            "frc-opencvsharp/src/FRC.OpenCvSharp/project.json",
+            "wpilib/WPILib/WPILib.csproj",
+            "wpilib/WPILib.Extras/WPILib.Extras.csproj",
+            "wpilib-ctre/src/FRC.WPILib.CTRE/project.json"
           ],
           "exclude": [
             "**/obj/**",
