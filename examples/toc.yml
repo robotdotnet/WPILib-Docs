@@ -8,9 +8,11 @@
     href: nt/configserver.md
   - name: Configuring a Client
     href: nt/configclient.md
-  - name: Getting SmartDashboard Data
-    href: nt/smartdashboard.md
   - name: Getting a reference to a Table
     href: nt/gettingtable.md
+  - name: Getting SmartDashboard Data
+    href: nt/smartdashboard.md
   - name: Using an ITable
     href: nt/usingtable.md
+  - name: Working with Table Listeners
+    href: nt/tablelisteners.md
