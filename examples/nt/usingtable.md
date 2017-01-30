@@ -26,7 +26,7 @@ To check if a key is persistent, call [IsPersistent](xref:NetworkTables.Tables.I
 ##Deleting a key
 Key deletion is also supported. However note that this feature only works when all clients and the server are based on the NT 3.0 protocol.
 All versions of NetworkTables after and including the 2016 season support this feature, so most likely this will work for your purpose.
-To delete a key, call [DeleteKey](xref:NetworkTables.Tables.ITable.DeleteKey(System.String)).
+To delete a key, call [Delete](xref:NetworkTables.Tables.ITable.Delete(System.String)).
 
 ##Ensuring a key exists in the table
 Often times, for configuration values you want the value to be persistent, but also want to ensure a safe default value is used if
