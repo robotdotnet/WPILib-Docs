@@ -16,3 +16,5 @@
     href: nt/usingtable.md
   - name: Working with Table Listeners
     href: nt/tablelisteners.md
+  - name: Low level ntcore interface
+    href: nt/ntcore.md
