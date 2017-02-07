@@ -18,3 +18,9 @@
     href: nt/tablelisteners.md
   - name: Low level ntcore interface
     href: nt/ntcore.md
+- name: Native Library Utilities
+  items:
+  - name: Introduction
+    href: nlu/intro.md
+  - name: Getting Started
+    href: nlu/gettingstarted.md
