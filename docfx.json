@@ -5,7 +5,7 @@
         {
           "cwd": "repos/",
           "files": [
-            "nativelibraryutilities/src/NativeLibraryUtilities/project.json",
+            "nativelibraryutilities/src/NativeLibraryUtilities/NativeLibraryUtilities.csproj",
             "cameraserver/src/FRC.CameraServer/project.json",
             "networktables/src/FRC.NetworkTables/project.json",
             "frc-opencvsharp/src/FRC.OpenCvSharp/project.json",
