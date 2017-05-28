@@ -5,13 +5,13 @@
         {
           "cwd": "repos/",
           "files": [
-            "nativelibraryutilities/src/NativeLibraryUtilities/NativeLibraryUtilities.csproj",
-            "cameraserver/src/FRC.CameraServer/project.json",
-            "networktables/src/FRC.NetworkTables/project.json",
-            "frc-opencvsharp/src/FRC.OpenCvSharp/project.json",
+            "frc-utilities/src/FRC.Utilities/FRC.Utilities.csproj",
+            "cameraserver/src/FRC.CameraServer/FRC.CameraServer.csproj",
+            "networktables/src/FRC.NetworkTables/FRC.NetworkTables.csproj",
+            "frc-opencvsharp/src/FRC.OpenCvSharp/NativeLibraryUtilities.csproj",
             "wpilib/WPILib/WPILib.csproj",
             "wpilib/WPILib.Extras/WPILib.Extras.csproj",
-            "wpilib-ctre/src/FRC.WPILib.CTRE/project.json"
+            "wpilib-ctre/src/FRC.WPILib.CTRE/FRC.WPILib.CTRE.csproj"
           ],
           "exclude": [
             "**/obj/**",
@@ -23,9 +23,6 @@
       
       "dest": "api",
       "filter": "filter.yml",
-      "properties": {
-        "TargetFramework": "net46"
-      }
     }
   ],
   "build": {
