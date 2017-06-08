@@ -32,7 +32,7 @@ git clone https://github.com/robotdotnet/wpilib-ctre "$localFolder\repos\wpilib-
 
 $rootLoc = Get-Location
 
-Set-Location -Path "$localFolder\repos\"
+Set-Location -Path "$localFolder\repos\frc-utilities"
 
 dotnet restore
 
