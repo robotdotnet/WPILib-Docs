@@ -32,7 +32,9 @@ git clone https://github.com/robotdotnet/wpilib-ctre "$localFolder\repos\wpilib-
 
 dotnet restore
 
-git checkout master
+if (!$env:APPVEYOR) {
+  git checkout master
+}
 
 docfx
 

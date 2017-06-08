@@ -5,7 +5,7 @@
         {
           "cwd": "repos/",
           "files": [
-            "frc-utilities/src/FRC.Utilities/FRC.Utilities.csproj",
+            "frc-utilities/src/FRC-Utilities/FRC-Utilities.csproj",
             "networktables/src/FRC.NetworkTables/FRC.NetworkTables.csproj",
             "wpilib-ctre/src/FRC.WPILib.CTRE/FRC.WPILib.CTRE.csproj"
           ],
