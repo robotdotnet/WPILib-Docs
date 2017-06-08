@@ -30,7 +30,13 @@ git clone https://github.com/robotdotnet/frc-utilities "$localFolder\repos\frc-u
 git clone https://github.com/robotdotnet/networktables "$localFolder\repos\networktables" --depth=1
 git clone https://github.com/robotdotnet/wpilib-ctre "$localFolder\repos\wpilib-ctre" --depth=1
 
+$rootLoc = Get-Location
+
+Set-Location -Path "$localFolder\repos\"
+
 dotnet restore
+
+Set-Location -Path $rootLoc
 
 if (!$env:APPVEYOR) {
   git checkout master
