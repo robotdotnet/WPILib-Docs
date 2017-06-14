@@ -29,14 +29,9 @@ Unzip($compilerName)
 git clone https://github.com/robotdotnet/frc-utilities "$localFolder\repos\frc-utilities" --depth=1
 git clone https://github.com/robotdotnet/networktables "$localFolder\repos\networktables" --depth=1
 git clone https://github.com/robotdotnet/wpilib-ctre "$localFolder\repos\wpilib-ctre" --depth=1
-
-$rootLoc = Get-Location
-
-Set-Location -Path "$localFolder\repos\frc-utilities"
+git clone https://github.com/robotdotnet/CameraServer "$localFolder\repos\cameraserver" --depth=1
 
 dotnet restore
-
-Set-Location -Path $rootLoc
 
 if (!$env:APPVEYOR) {
   git checkout master
