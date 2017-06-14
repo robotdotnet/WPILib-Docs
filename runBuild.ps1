@@ -30,6 +30,7 @@ git clone https://github.com/robotdotnet/frc-utilities "$localFolder\repos\frc-u
 git clone https://github.com/robotdotnet/networktables "$localFolder\repos\networktables" --depth=1
 git clone https://github.com/robotdotnet/wpilib-ctre "$localFolder\repos\wpilib-ctre" --depth=1
 git clone https://github.com/robotdotnet/CameraServer "$localFolder\repos\cameraserver" --depth=1
+git clone https://github.com/robotdotnet/FRC-OpenCvSharp "$localFolder\repos\frc-opencvsharp" --depth=1
 
 dotnet restore
 
