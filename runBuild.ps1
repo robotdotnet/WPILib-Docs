@@ -38,6 +38,13 @@ dotnet restore "$localFolder\repos\networktables"
 dotnet restore "$localFolder\repos\cameraserver"
 dotnet restore "$localFolder\repos\wpilib-ctre"
 
+git clone https://github.com/robotdotnet/wpilib "$localFolder\repos\wpilib" --depth=1
+if ($env:APPVEYOR) {
+    nuget restore "$localFolder\repos\wpilib\robotdotnet-wpilib.sln"
+} else {
+    .\repos\wpilib\NuGet.exe restore .\repos\wpilib\robotdotnet-wpilib.sln
+}
+
 if (!$env:APPVEYOR) {
   git checkout master
 }
