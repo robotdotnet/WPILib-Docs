@@ -22,7 +22,7 @@
       "dest": "api",
       "filter": "filter.yml",
       "properties": {
-                "TargetFramework": "net46"
+                "TargetFramework": "net451"
       }
     }
   ],
