@@ -32,7 +32,11 @@ git clone https://github.com/robotdotnet/wpilib-ctre "$localFolder\repos\wpilib-
 git clone https://github.com/robotdotnet/CameraServer "$localFolder\repos\cameraserver" --depth=1
 git clone https://github.com/robotdotnet/FRC-OpenCvSharp "$localFolder\repos\frc-opencvsharp" --depth=1
 
-dotnet restore
+dotnet restore "$localFolder\repos\frc-opencvsharp"
+dotnet restore "$localFolder\repos\frc-utilities"
+dotnet restore "$localFolder\repos\networktables"
+dotnet restore "$localFolder\repos\cameraserver"
+dotnet restore "$localFolder\repos\wpilib-ctre"
 
 if (!$env:APPVEYOR) {
   git checkout master
