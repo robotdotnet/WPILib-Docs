@@ -9,7 +9,7 @@ if ($env:APPVEYOR)
 
     $compilerName = "compiler"
   # Install docfx
-  (New-Object System.Net.WebClient).DownloadFile("https://github.com/dotnet/docfx/releases/download/v2.18.3/docfx.zip", "$localFolder\$compilerName.zip")
+  (New-Object System.Net.WebClient).DownloadFile("https://github.com/dotnet/docfx/releases/download/v2.19/docfx.zip", "$localFolder\$compilerName.zip")
 # unzip everything
 Add-Type -assembly "system.io.compression.filesystem"
 
