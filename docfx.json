@@ -5,13 +5,7 @@
         {
           "cwd": "repos/",
           "files": [
-            "frc-utilities/src/FRC-Utilities/FRC-Utilities.csproj",
-            "frc-opencvsharp/src/FRC.OpenCvSharp/FRC.OpenCvSharp.csproj",
-            "networktables/src/FRC.NetworkTables/FRC.NetworkTables.csproj",
-            "wpilib/WPILib/WPILib.csproj",
-            "wpilib/WPILib.Extras/WPILib.Extras.csproj",
-            "wpilib-ctre/src/FRC.WPILib.CTRE/FRC.WPILib.CTRE.csproj",
-            "cameraserver/src/FRC.CameraServer/FRC.CameraServer.csproj"
+            "wpilib/src/**.csproj"
           ],
           "exclude": [
             "**/obj/**",
@@ -24,7 +18,7 @@
       "dest": "api",
       "filter": "filter.yml",
       "properties": {
-                "TargetFramework": "net45"
+                "TargetFramework": "netstandard2.0"
       }
     }
   ],
