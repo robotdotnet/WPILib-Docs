@@ -21,6 +21,12 @@ steps:
 - script: docfx
   displayName: 'Run docfx'
 
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '_site' 
+    archiveFile: 'site.zip' 
+  displayName: 'Zip site'
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: site.zip
