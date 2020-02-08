@@ -1,0 +1,27 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- script: choco install docfx
+  displayName: 'Install docfx'
+
+- script: |
+    git clone https://github.com/robotdotnet/wpilib repos\wpilib --depth=1
+    dotnet restore repos\wpilib
+  displayName: 'Clone WPILib'
+
+- script: docfx
+  displayName: 'Run docfx'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: site.zip
+    ArtifactName: 'Site'
